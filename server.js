@@ -25,7 +25,9 @@ app.use(express.json());
 // This points our server to our initial data.
 //===========================================================================
 var tables = require("./data/tableData");
+console.log(tables);
 var waitingList = require("./data/waitinglistData");
+console.log(waitingList);
 
 //===========================================================================
 // ROUTER
@@ -33,7 +35,7 @@ var waitingList = require("./data/waitinglistData");
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 //===========================================================================
 
-require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app, tables, waitingList);
 require("./routes/htmlRoutes")(app);
 
 //===========================================================================
