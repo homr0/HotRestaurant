@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+    background-image: url(../public/images/background.jpg);
+    font-family: 'Boogaloo', cursive;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
