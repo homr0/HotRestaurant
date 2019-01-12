@@ -4,7 +4,6 @@
 //=========================================================================
 
 var express = require("express");
-var bodyParser = require("body-parser");
 
 //=========================================================================
 // EXPRESS CONFIGURATION
@@ -15,24 +14,31 @@ var bodyParser = require("body-parser");
 var app = express();
 
 // Sets an initial port. We'll use this later in our listener
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3030;
 
 // Sets up the Express app to handle data paarsing
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-//=========================================================================
+//===========================================================================
+// DATA
+// This points our server to our initial data.
+//===========================================================================
+var tables = require("./data/tableData");
+var waitingList = require("./data/waitinglistData");
+
+//===========================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-//=========================================================================
+//===========================================================================
 
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-//=========================================================================
+//===========================================================================
 //The below code effectively "starts" our server
-//=========================================================================
+//===========================================================================
 
 app.listen(PORT, function() {
     console.log("App listening on PORT: "+ PORT);
