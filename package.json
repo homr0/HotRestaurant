@@ -1,0 +1,25 @@
+{
+  "name": "HotRestaurant",
+  "version": "1.0.0",
+  "description": "A restaurant so hot that you can see the chefs make your food in front of you. You will need a reservation if you want to eat at one of our 5 tables.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homr0/HotRestaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/homr0/HotRestaurant/issues"
+  },
+  "homepage": "https://github.com/homr0/HotRestaurant#readme"
+}
