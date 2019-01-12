@@ -25,9 +25,7 @@ app.use(express.json());
 // This points our server to our initial data.
 //===========================================================================
 var tables = require("./data/tableData");
-console.log(tables);
-var waitingList = require("./data/waitinglistData");
-console.log(waitingList);
+var waitingList = require("./data/waitinglistData")(tables);
 
 //===========================================================================
 // ROUTER

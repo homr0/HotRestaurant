@@ -7,10 +7,28 @@
 
 var tableArray = [
     {
-        customerName : "Frozen",
-        customerEmail: "frozen@example.com",
-        customerID: "frozen79",
-        phoneNumber: "000-000-0000"
+        "customerName": "Yura Hooman",
+        "customerEmail": "yuHuman@example.com",
+        "phoneNumber": "000-555-4350",
+        "customerID": "yuHuman"
+    },
+    {
+        "customerName": "Someone Something",
+        "customerEmail": "somethingOne@example.com",
+        "phoneNumber": "000-555-3791",
+        "customerID": "somethingOne"
+    },
+    {
+        "customerName": "Ima Bot",
+        "customerEmail": "roboto@example.com",
+        "phoneNumber": "000-555-3691",
+        "customerID": "roboto"
+    },
+    {
+        "customerName": "Ur Ex",
+        "customerEmail": "urEx@example.com",
+        "phoneNumber": "000-555-4269",
+        "customerID": "urEx"
     }
 ];
 
